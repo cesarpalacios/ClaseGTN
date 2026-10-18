@@ -1,0 +1,21 @@
+# deployment.yml — Lab 04: COMPLETEN imagen, réplicas y namespace
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sitio-gtn
+  namespace: equipo-nn
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: sitio-gtn
+  template:
+    metadata:
+      labels:
+        app: sitio-gtn
+    spec:
+      containers:
+        - name: web
+          image: nginx:alpine   # reemplazar por la imagen del sitio (Lab 03)
+          ports:
+            - containerPort: 80
