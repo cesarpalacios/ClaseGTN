@@ -70,9 +70,4 @@ docker service rollback sitio  # rollback ordenado a la versión anterior
 3. **Run task** en el clúster, con IP pública activada y grupo de seguridad con el puerto 80 abierto.
 4. Abran la IP pública de la tarea en el navegador.
 
-📝 **Entrega · por equipo:**
-- 📸 Captura 1: la réplica reemplazada en Swarm.
-- 📸 Captura 2: el navegador con la IP de la tarea de Fargate.
-- ✍️ Un párrafo: ¿Swarm en EC2 o ECS Fargate para el sitio del curso? ¿Por qué?
-
 🧹 **Al terminar:** detengan la tarea y borren el clúster de ECS. `Stop` a la instancia.
