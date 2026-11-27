@@ -5,7 +5,7 @@ FROM php:7.4-apache
 #ADD ./site.conf /etc/apache2/sites-enabled/
 #RUN ln -s /etc/apache2/sites-available/site.ceapalaciosal.conf /etc/apache2/sites-enabled/
 COPY BASICA/ /var/www/html/
-#RUN chown -R www-data:www-data /home/web
+RUN chown -R www-data:www-data /var/www/
 #RUN apt-get install software-properties-common -y
 #RUN apt-get update
 #RUN apt-get install wget build-essential libncursesw5-dev libssl-dev libsqlite3-dev tk-dev libgdbm-dev libc6-dev libbz2-dev libffi-dev zlib1g-dev -y
